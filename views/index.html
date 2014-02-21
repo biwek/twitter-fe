@@ -3,19 +3,62 @@
 	<head>
 		<title>Twitter</title>
 		<link rel='shortcut icon' type='image/x-icon' href='../public/images/favicon.ico'>
-		<!-- <link rel='stylesheet' type='text/css' href='../public/css/reset.css'> -->
+		<link rel='stylesheet' type='text/css' href='../public/css/reset.css'>
+		<link rel='stylesheet' type='text/css' href='../public/css/styles.css'>
 	</head>
 	
 	<body>
 		<header> 
-			<a> Home</a>
-			<a> Connect </a>
-			<a> Discover </a>
-			<a> Me </a>
-			<img src='../public/images/twitter_logo.png' style='width: 20px;'>
-			<input type='text' name='search' placeholder='Search'>
+			<a href='#'> Home</a>
+			<a href='#'> Connect </a>
+			<a href='#'> Discover </a>
+			<a href='#'> Me </a>
+			<img src='../public/images/twitter_logo.png'>
+			<input class='search' type='text' name='search' placeholder='Search'>
 		</header>
-		<h1>This is twitter!</h1>
+
+		<div id='vertical-container'>
+			<div class='container'>
+				<aside>
+					<section class='profile'>
+						<div class='profile-image'>
+							profile
+						</div>
+						<div class='follow-stats'>
+							<a href=''><p>TWEETS <br> <span class='stats'>5</span></p></a> 
+							<a href=''><p>FOLLOWING <br> <span class='stats'>18</span></p></a> 
+							<a href=''><p>FOLLOWERS<br><span class='stats'>120</span></p></a>
+
+						</div>
+						<div class='compose-tweet'>
+							<input class='compose-tweet-field' type='text' name='compose' placeholder='Compose new Tweet...'>
+						</div>
+					</section>
+					
+					<section class='who-follow'>
+						Who to follow
+					</section>
+				</aside>
+
+				<section class='tweet-feed'>
+					<div class='tweet-feed-header'>
+						<h1>Tweets</h1>
+					</div>
+					<div class='tweet-feed-post'>
+						<aside>
+							<img class='tweeter-pro-img' src=''>
+						</aside>
+						<section>
+							<div class='tweeter-name'>
+							</div>
+							<div class='tweeter-tweet'>
+							</div>
+						</section>
+					</div>
+				</section>
+			</div>
+		</div>
+
 	</body>
 
 	<footer> </footer>
