@@ -6,6 +6,11 @@ body {
 	font-size: 14px;
 }
 
+@font-face {
+	font-family: rosettaIconFont;
+	src: url(../fonts/rosetta-icons-Regular.woff);
+}
+
 header {
 	background-color: #fff;
 	padding: 5px 10px 0;
@@ -67,10 +72,11 @@ input:focus {
 #vertical-container {
 	display: -webkit-flex;
 	display: flex;
-	height: 420px;
+	height: 29em;
 }
 
 .container {
+	width: 900px;
 	display: -webkit-flex;
 	display: flex;
 	position: relative;
@@ -93,6 +99,7 @@ aside section {
 	width: 600px;
 	background-color: #fff;
 	border-radius: 4px;
+	position: absolute;
 }
 
 .profile-image {
@@ -152,4 +159,53 @@ span.stats {
 .tweet-feed-post {
 	border-top: 1px solid #ddd;
 	padding: 15px;
+	display: flex;
+	cursor: pointer;
+}
+
+.tweet-feed-post aside {
+	margin-right: 10px;
+}
+
+.tweet-feed-post section{
+	flex: 1;
+}
+
+.tweeter-pro-img {
+	width: 48px;
+	border-radius: 5px;
+}
+
+
+.tweeter-name a{
+	font-weight: bold;
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.tweeter-tweet a:hover,
+.tweeter-name a:hover {
+	text-decoration: underline;
+	color: #0084B4;
+}
+
+.tweeter-name p{
+	color: #999;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.tweeter-tweet p{
+	margin-top: 5px;
+}
+
+.tweeter-tweet img{
+	padding: 15px 0;
+	width: 400px;
+}
+
+.tweeter-tweet a{
+	text-decoration: none;
+	color: #0084B4;
 }
