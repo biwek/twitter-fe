@@ -45,6 +45,7 @@ function spinnerInit() {
     		setTimeout(function() {
  					$('.spinner').fadeOut();
    				$('.tweet-feed').append(finalPost)
+   				$('.spinner-feed-post').remove().insertAfter($(".tweet-feed-post:last"))
    				$('.spinner-feed-post').hide()
 				}, 3000)
     }
