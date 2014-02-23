@@ -7,13 +7,35 @@ body {
 }
 
 @font-face {
-	font-family: rosettaIconFont;
+	font-family: 'rosettaIconFont';
 	src: url(../fonts/rosetta-icons-Regular.woff);
+	src: url(../fonts/rosetta-icons-Regular.ttf);
 }
+
+.Icon {
+	font-family: 'rosettaIconFont';
+	font-size: 25px;
+	display: block;
+	font-weight: normal;
+	font-style: normal;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.Icon--home:before { content: "\f053"; }
+.Icon--connect:before { content: "\f050"; }
+.Icon--discover:before { content: "\f052"; }
+.Icon--me:before { content: "\f056"; }
+.Icon--message:before { content: "\f054"; }
+.Icon--setting:before { content: "\f059"; }
+.Icon--tweet:before { content: "\f029"; }
+.Icon--bird:before { content: "\f179"; color: #0084b4; padding: 0 5em;}
 
 header {
 	background-color: #fff;
-	padding: 5px 10px 0;
+	padding: 10px 0 0;
 	border-bottom: 1px solid #999;
 	font-weight: 500;
 	position: fixed;
@@ -23,22 +45,16 @@ header {
 	height: 40px;
 }
 
-header img {
-	padding: 10px 10%;
-	width: 20px;
-	height: 18px;
-}
-
 header a {
-	padding: 10px;
-	padding-bottom: 16px;
+	padding: 15px;
 	text-decoration: none;
 	color: #666;
+	font-size: 13px;
 }
 
 header a:hover{
 	color: #0084b4;
-	border-bottom: 3px solid #0084b4;
+	border-bottom: 5px solid #0084b4;
 }
 
 
@@ -69,10 +85,24 @@ input:focus {
 	outline: none;
 }
 
+.topbar-container {
+
+}
+
+.topbarleft {
+	padding-top: 3px;
+}
+
+.topbarright {
+	position: absolute;
+	right: 25px;
+}
+
+
 #vertical-container {
 	display: -webkit-flex;
 	display: flex;
-	height: 29em;
+	height: 30em;
 }
 
 .container {
@@ -156,6 +186,8 @@ span.stats {
 	font-weight: 200;
 }
 
+.tweet-feed-hiddenpost,
+.spinner-feed-post,
 .tweet-feed-post {
 	border-top: 1px solid #ddd;
 	padding: 15px;
@@ -163,10 +195,16 @@ span.stats {
 	cursor: pointer;
 }
 
+.tweet-feed-hiddenpost {
+	visibility: hidden;
+}
+
+.tweet-feed-hiddenpost aside,
 .tweet-feed-post aside {
 	margin-right: 10px;
 }
 
+.tweet-feed-hiddenpost section,
 .tweet-feed-post section{
 	flex: 1;
 }
@@ -209,3 +247,16 @@ span.stats {
 	text-decoration: none;
 	color: #0084B4;
 }
+
+/*.hiddenpost{
+	display: flex;
+	visibility: hidden;
+}*/
+
+#spinner-container {
+	margin: 20px auto 20px auto;
+	visibility: hidden;
+};
+
+
+

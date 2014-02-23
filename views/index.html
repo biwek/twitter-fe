@@ -9,12 +9,21 @@
 	
 	<body>
 		<header> 
-			<a href='#'> Home</a>
-			<a href='#'> Connect </a>
-			<a href='#'> Discover </a>
-			<a href='#'> Me </a>
-			<img src='../public/images/twitter_logo.png'>
-			<input class='search' type='text' name='search' placeholder='Search'>
+			<!-- <div class='topbar-container'> -->
+				<div class='topbarleft'>
+					<a href='#'> <span class='Icon Icon--home'></span> Home</a>
+					<a href='#'> <span class='Icon Icon--connect'> </span>Connect </a>
+					<a href='#'> <span class='Icon Icon--discover'></span>Discover </a>
+					<a href='#'> <span class='Icon Icon--me'></span>Me </a>
+				</div>
+					<span class='Icon Icon--bird'></span>
+				<div class='topbarright'>
+					<input class='search' type='text' name='search' placeholder='Search'>
+					<a href=''><span class='Icon Icon--message'></span></a>
+					<a href=''><span class='Icon Icon--setting'></span></a>
+					<a href=''><span class='Icon Icon--tweet'></span></a>
+				</div>
+			<!-- </div> -->
 		</header>
 
 		<div id='vertical-container'>
@@ -118,9 +127,14 @@
 						</section>
 					</div>
 
+					<div class='spinner-feed-post'> <div id='spinner-container'></div></div>
+
 				</section>
 			</div>
 		</div>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+		<script src='../public/js/application.js'></script>
+		<script src='../public/js/spin.js'></script>
 
 	</body>
 
