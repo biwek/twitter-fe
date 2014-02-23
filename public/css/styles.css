@@ -30,8 +30,14 @@ body {
 .Icon--me:before { content: "\f056"; }
 .Icon--message:before { content: "\f054"; }
 .Icon--setting:before { content: "\f059"; }
-.Icon--tweet:before { content: "\f029"; }
+.Icon--tweet:before { content: "\f029"; background: rgba(0,132,180,.8); padding: 3px 9px; border-radius: 5px;color: white;}
 .Icon--bird:before { content: "\f179"; color: #0084b4; padding: 0 5em;}
+
+.Icon--tweet:hover {
+	background-color: #0084B4;
+	padding: 3px 0px; 
+	border-radius: 5px;
+}
 
 header {
 	background-color: #fff;
@@ -50,11 +56,6 @@ header a {
 	text-decoration: none;
 	color: #666;
 	font-size: 13px;
-}
-
-header a:hover{
-	color: #0084b4;
-	border-bottom: 5px solid #0084b4;
 }
 
 
@@ -93,16 +94,18 @@ input:focus {
 	padding-top: 3px;
 }
 
+.topbarleft a:hover{
+	color: #0084b4;
+	border-bottom: 5px solid #0084b4;
+}
+
 .topbarright {
 	position: absolute;
 	right: 25px;
 }
 
-
-#vertical-container {
-	display: -webkit-flex;
-	display: flex;
-	height: 30em;
+.topbarright a:hover{
+	color: #0084B4;
 }
 
 .container {
@@ -122,10 +125,12 @@ aside section {
 }
 
 .profile {
+	margin-top: 5em;
 	margin-bottom: 0.5em;
 }
 
 .tweet-feed {
+	margin-top: 5em;
 	width: 600px;
 	background-color: #fff;
 	border-radius: 4px;
@@ -167,6 +172,7 @@ span.stats {
 	background-color: #E5F2F7;
 	text-align: center;
 	padding: 8px;
+	max-height: 100px;
 }
 
 .compose-tweet-field {
@@ -177,6 +183,12 @@ span.stats {
 	border: 1px solid rgba(0,132,180,0.25);
 	font-size: 13px;
 	font-weight: 100;
+	resize: none;
+}
+
+.compose-tweet-field:focus {
+	height: 80px;
+	outline: none;
 }
 
 .tweet-feed-header {

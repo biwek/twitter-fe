@@ -7,8 +7,8 @@ function spinnerInit() {
 		var opts = {
 		  lines: 10, // The number of lines to draw
 		  length: 5, // The length of each line
-		  width: 3, // The line thickness
-		  radius: 5, // The radius of the inner circle
+		  width: 2, // The line thickness
+		  radius: 7, // The radius of the inner circle
 		  corners: 1, // Corner roundness (0..1)
 		  rotate: 0, // The rotation offset
 		  direction: 1, // 1: clockwise, -1: counterclockwise
@@ -32,7 +32,7 @@ function spinnerInit() {
 
 	function scrolling(){
 		var posts = "<div class='tweet-feed-post'><aside> <img class='tweeter-pro-img' src='../public/images/juan.jpeg'> </aside>"
-		var posts2	= "<section><div class='tweeter-name'><p> <a href=''>Juan Mata Garcia</a> @DerrenBown </p></div>"
+		var posts2	= "<section><div class='tweeter-name'><p> <a href=''>Juan Mata Garcia</a> @juanmata8 </p></div>"
 		var posts3	= "<div class='tweeter-tweet'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Nulla convallis neque non luctus tristique. V </p>"
 		var posts4	= "</div>	</section></div>"
 		var finalPost = posts+posts2+posts3+posts4;
@@ -47,7 +47,7 @@ function spinnerInit() {
    				$('.tweet-feed').append(finalPost)
    				$('.spinner-feed-post').remove().insertAfter($(".tweet-feed-post:last"))
    				$('.spinner-feed-post').hide()
-				}, 3000)
+				}, 2000)
     }
 		});
 	}
